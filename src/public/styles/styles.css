@@ -1,4 +1,4 @@
-body {
+html, body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #1c1c1c;
@@ -10,6 +10,10 @@ body {
 h1 {
     margin-bottom: 20px;
     font-size: 2.5em;
+    color: aliceblue;
+}
+.motor-club {
+    background-color: #1c1c1c;
 }
 
 table {

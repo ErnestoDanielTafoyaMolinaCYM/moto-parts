@@ -1,0 +1,25 @@
+<div class="card shadow-sm border-light">
+    <div class="card-header text-white" style="background-color:#6900cc">
+        <h5 class="card-title mb-0">{{ title }}</h5>
+    </div>
+    <div class="card-body">
+        <form action="{{ action }}" method="{{ method }} ">
+            <input type="text" name="idParte" id="idParte" value="{{ part.idParte }}" hidden>
+            <div class="mb-3">
+                <label for="partName" class="form-label">Nombre</label>
+                <input type="text" class="form-control" name="name" id="partName" placeholder="Nombre de la parte" value="{{ part.nombre_parte }}" required>
+            </div>
+            <div class="mb-3">
+                <label for="partDescription" class="form-label">Descripción</label>
+                <input type="text" class="form-control" name="description" id="partDescription" placeholder="Descripción de la parte" value="{{ part.descripcion }}" required>
+            </div>
+            <div class="mb-3">
+                <label for="partPrice" class="form-label">Precio</label>
+                <input type="number" class="form-control" name="price" id="partPrice" placeholder="Precio" value="{{ part.precio }}" required>
+            </div>
+            <div class="d-flex justify-content-end">
+                <button class="btn btn-{{success}} w-100" type="submit" >{{ button_text }}</button>
+            </div>
+        </form>
+    </div>
+</div>
